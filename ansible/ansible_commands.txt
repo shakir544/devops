@@ -1,0 +1,3 @@
+# Using ansible, ping all the nodes 
+
+ansible all -m "ping" 
