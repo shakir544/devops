@@ -1,3 +1,15 @@
 # Using ansible, ping all the nodes 
 
 ansible all -m "ping" 
+ansible all -m ping
+
+# call a shell command 
+
+ansible all -a "pwd"
+ansible all -a "ls" 
+ansible all -a "ps"
+
+#use sudo rights
+
+ansible --sudo 
+
