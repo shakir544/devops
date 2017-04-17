@@ -1,0 +1,33 @@
+# Install Docker in Centos 7 
+
+1) Login as root to the system. 
+2) create a docker repo file in /etc/yum.repo.d folder 
+3) create a file docker.repo 
+
+[dockerrepo]
+name=Docker Repository
+baseurl=https://yum.dockerproject.org/repo/main/centos7/7/
+enabled=1
+gpgcheck=1
+gpgkey=https://yum.dockerproject.org/gpg
+
+4) update yum 
+command yum update 
+
+5) Install docker 
+yum install -y docker-engine
+
+6) enable docker 
+systemctl enable docker 
+
+7) start docker demon process 
+systemctl start docker 
+
+8)check the docker version 
+docker --version 
+
+9)Add user to the docker group. # to run the docker as a non root user  
+usermod -a -G docker user # in this case user is me 
+usermod -a -G docker shakirgooty1
+
+ 
