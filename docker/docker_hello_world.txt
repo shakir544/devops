@@ -1,0 +1,26 @@
+# This file consists of commands to 
+
+1) To Search images from command line 
+2) To Pull images from hub.docker 
+3) To Run image in a container 
+
+
+# Search images in command line 
+
+docker search centos 
+
+docker search apache 
+
+docker search hello-world 
+
+
+# Pull Images from Hub Docker 
+
+docker pull hello-world 
+
+
+# Run images in a container 
+
+docker run hello-world 
+
+
