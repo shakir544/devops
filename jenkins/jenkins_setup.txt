@@ -1,0 +1,42 @@
+# Steps to install Jenkins 
+
+#Server Information 
+Linux  3.10.0-327.28.2.el7.x86_64 #1 SMP Wed Aug 3 11:11:39 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+
+#Installing and Configuring Jenkins
+
+# Prerequistes 
+1) Check if java is already installed ? 
+
+command: which java 
+
+2) check if 8080 port is already used by some other processes ?? 
+
+command : netstat -tulpn | grep 8080 
+
+3) install java 
+
+command : yum install java 
+
+4) Add Jenkins to yum repos  
+
+wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+
+5) Install 
+
+	a) yum install -y jenkins-2.19.4-1.1
+
+6) Disable the repo after installation to prevent updates 
+
+yum-config-manager --disable jenkins
+
+7) Check if the port 8080 is being used by others !!!
+
+netstat -tulpu | grep 8080 
+
+8) Start service 
+sudo service start jenkins 
+
+
+
