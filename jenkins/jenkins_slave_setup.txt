@@ -1,0 +1,21 @@
+# Jenkins Slave Setup 
+
+# Prereqs 
+
+1) Check if JAva is installed !! 
+
+command : yum install java 
+
+2) Create Ssh folder in Jenkins lib directory 
+
+mkdir /var/lib/jenkins/.ssh/
+
+3) Copy the SSH key from Master server for Jenkins user 
+
+vi /var/lib/jenkins/.ssh/authorized_keys
+
+4) Install Git 
+
+command : yum install git 
+
+
