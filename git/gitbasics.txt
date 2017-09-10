@@ -16,3 +16,28 @@ git commit -m "commit message"
 -- push the file to remote repository
 
 git push
+
+
+-- command to get the difference from local to stage
+
+git diff
+
+-- command to unstage the file from the staging area
+
+git reset HEAD filename
+
+
+-- command to blow away all the changes since last commit
+
+git checkout -- filename
+
+
+-- command to undo the last commit and put changes back to staging
+
+git reset --soft HEAD^
+
+-- command to amend the previous commit
+
+git commit --amend -m "New Message"
+
+ 

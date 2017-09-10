@@ -35,3 +35,7 @@ git config --global core.excludefiles ~/.gitignore_global
 5) verify the changes
 
 git gloabl --list
+
+-- Add color in Git config --pretty command line colors.
+
+git config --color.ui true
