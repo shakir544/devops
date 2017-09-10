@@ -1,0 +1,18 @@
+-- Creating empty repository
+
+git init
+
+The above command creates are empty repository in your current folder.
+
+
+-- Add files to Staging
+
+git add filename
+
+-- Commit file to local repository
+
+git commit -m "commit message"
+
+-- push the file to remote repository
+
+git push
