@@ -1,1 +1,37 @@
 -- Installation steps to Git and Commands to use it.
+
+Install Git in Centos
+
+1) login as root
+
+2) yum install git
+
+
+-- setup the config
+
+git config --global user.name "username"
+
+git config --global user.email "email@emailserver.com"
+
+
+-- verify the config details
+
+git config --list
+
+
+-- create a system config file
+
+git config --system system.name "Git Server Machine"
+
+-- Create a gitignore config file and add it to git config
+
+1) Create a file .gitignore_global
+2) add contents  like .DS_STORE, ~
+3) Save it in root home directory. Location : /root/.gitignore_global
+4) Reference the gitignore file in git config file
+
+git config --global core.excludefiles ~/.gitignore_global
+
+5) verify the changes
+
+git gloabl --list
