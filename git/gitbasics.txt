@@ -40,4 +40,10 @@ git reset --soft HEAD^
 
 git commit --amend -m "New Message"
 
- 
+-- command to undo the last commit and all changes
+
+git reset --hard HEAD^
+
+-- command to undo the last two commits and all changes
+
+git reset --hard HEAD^^
