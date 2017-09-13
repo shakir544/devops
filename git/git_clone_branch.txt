@@ -1,0 +1,35 @@
+-- Collabartion
+
+-- Clone the Git repository
+git clone https://github.com/repository.git
+
+Notes:
+It Creates a directory with repository name in local machine.
+If you want to have a different name to the repository.
+
+git clone https://github.com/repository.git git-demo
+
+-- Verify after creating the clone
+git remove -v
+
+You will get the below output
+
+origin https://github.com/repository.git
+
+
+-- Creating a Branch
+git branch git_branch
+
+-- Jump to branch from Master & Verify after that
+git checkout git_branch
+git branch
+
+-- Merge the branch with Master
+
+1) Checkout to master.
+git checkout master
+
+2) git merge git_branch.
+
+-- Delete the branch
+git branch -d git_branch
