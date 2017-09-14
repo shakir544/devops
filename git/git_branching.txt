@@ -5,3 +5,25 @@
 -- Creating a remote Branch
 1) git checkout -b branch_name
 2) git push origin branch_name
+
+
+-- Removing a remote branch
+git  push origin :branch_name
+
+-- Deleting a local branch
+
+git branch -d branch_name  -- soft delete. If the local commits are commited, then it will throw a error
+
+git branch -D branch_name  -- hard delete.
+
+
+-- pull a remote branch
+
+git pull  -- A regular git command to pull a remote repo.
+
+git pull -r  -- pulls the remote branches.
+
+
+-- show remote repo information
+
+git remote show origin 
