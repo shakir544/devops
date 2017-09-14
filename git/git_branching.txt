@@ -42,3 +42,6 @@ git checkout tag_name
 
 --push to tags
 git push --tags
+
+--retrive a tag
+git checkout tag_version
