@@ -1,0 +1,7 @@
+--This file provides few examples of branching in git
+
+-- Remote branching
+
+-- Creating a remote Branch
+1) git checkout -b branch_name
+2) git push origin branch_name

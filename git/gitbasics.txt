@@ -2,7 +2,7 @@
 
 git init
 
-The above command creates are empty repository in your current folder.
+The above command creates empty repository in your current folder.
 
 
 -- Add files to Staging
