@@ -26,4 +26,19 @@ git pull -r  -- pulls the remote branches.
 
 -- show remote repo information
 
-git remote show origin 
+git remote show origin
+
+--Clean up remote deleted remote branch
+git remote prune origin
+
+--Add a new tag
+git tag -a tag_name -m "Comment tag_name"
+
+--List all the tags
+git tag
+
+--Checkout code from a specific commit, use tag
+git checkout tag_name
+
+--push to tags
+git push --tags
