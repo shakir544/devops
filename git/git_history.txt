@@ -1,0 +1,88 @@
+-- Histroy and configuration in Git
+
+-- How to see the log
+git log
+
+-- colorizing the log
+git config --global color.ui true
+
+-- format the log output
+git log --pretty=oneline
+
+-- format the log output with different format
+git log --pretty=format: "%h %ad -%s [%an]"
+
+%ad - author date
+%an - author name
+%h - SHA hash
+%s subject
+% ref names
+
+
+--Patch output
+git log --online -p
+
+
+--stats output
+git log --online --stat
+
+--graph output
+git log --online --graph
+
+-- git log between range of dates
+git log --until=1.minute.ago
+
+git log --since=1.day.ago
+
+git log --since=1.hour.ago
+
+git log --since=1.month.ago --untill=2.weeks.ago
+
+git log --since=2000-01-01 --untill=2012-12-21
+
+
+-- Git diff
+git diff HEAD
+git diff HEAD^            -- Parent of lastest commit
+git diff HEAD^^           -- grand parent of latest commit
+git diff HEAD~5           -- five commits ago
+git diff HEAD^..HEAD      -- second most recent commit vs most recent commit
+
+
+git diff f5acdddefffeggedr..fedddefeeggeedddfed   --range of SHAs
+
+git log --onelione
+
+git diff master bird      -- diff between two branches.
+
+git diff --since=1.week.ago --until=1.minutes.ago         --diff between date range
+
+-- Git blame
+git blame filename --date short
+
+-- Excluding files
+To exclude a file or directory in git, add that file or directory in
+.git/info/exclude file.
+
+-- Ignore files
+Add the files or directories in the .gitignore file.
+
+-- Removing the files
+git rm README.txt         -- Removes the file.
+git status
+git commit -m "Remove README"   -- Removes the file from repo.
+
+- Untracking the files
+git rm --cached test.log
+
+-- Aliases
+git config --global alias.mylog \
+"log --pretty=format: '%h %s [%an]' --graph"
+
+git config --global alias.lol \
+"log --graph --decorate --pretty=online --abbrev-commit -all"
+
+git config --global alias.st status
+git config --global alias.co checkout
+git config --gloabl alias.br branch
+git config --global alias.ci commit
