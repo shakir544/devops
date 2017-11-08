@@ -36,7 +36,10 @@ yum-config-manager --disable jenkins
 netstat -tulpu | grep 8080 
 
 8) Start service 
-sudo service start jenkins 
+sudo service jenkins start  
+
+9) Check the status of the service 
+sudo servcie jenkins status 
 
 
 
