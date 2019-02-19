@@ -1,0 +1,16 @@
+# Frequently used docker commands.
+
+# List all the docker images.
+docker image ls
+
+# List all the docker containers.
+docker container ls
+
+# Build the container image in current directory.
+docker build --tag=app:v0.0.0 .
+
+# List all the containers that status=exited
+docker ps -a -q -f status=exited
+
+# Remove all the container that status=exited
+docker rm $(docker ps -a -q -f status=exited)
