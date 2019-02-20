@@ -30,3 +30,10 @@ docker container prune
 # Remove images
 docker image rm <image_id> or <image_name>
 docker rmi <image_id> or <image_name>
+
+## Run - Related command
+# Run the container
+docker container run <container_name>
+
+# Run th container interactively and use the -t option
+docker container run -it <container_name>
