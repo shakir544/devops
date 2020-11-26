@@ -45,3 +45,12 @@ git push --tags
 
 --retrive a tag
 git checkout tag_version
+
+-- Create a sub-Branch to already existing branch 
+-- First create a branch 
+git checkout -b myBranch  
+
+-- Secon create a sub branch 
+git checkout -b mySubBranch myBranch
+
+
